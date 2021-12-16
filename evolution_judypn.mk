@@ -26,19 +26,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 # Inherit from judypn device
 $(call inherit-product, device/lge/judypn/device.mk)
 
-# Inherit some common dotOS stuff.
-$(call inherit-product, vendor/aosp/config/common.mk)
+# Inherit some common EvolutionX stuff.
+$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
 # Overlays (inherit after vendor/cm to ensure we override it)
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Device identifiers
 
-PRODUCT_NAME := aosp_judypn
+PRODUCT_NAME := evolution_judypn
 PRODUCT_DEVICE := judypn
 PRODUCT_BRAND := lge
 PRODUCT_MANUFACTURER := LGE
-PRODUCT_RELEASE_NAME := V40
+PRODUCT_RELEASE_NAME := V40 ThinQ
 PRODUCT_MODEL := LM-V405
 
 PRODUCT_GMS_CLIENTID_BASE := android-om-lg
@@ -53,8 +53,11 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 BUILD_FINGERPRINT := "lge/judypn_lao_eea/judypn:10/QKQ1.191222.002/2021917599e76:user/release-keys"
 
-# DotOs
+# Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1440
 
 # Charging Animation
 TARGET_INCLUDE_PIXEL_CHARGER := true
+
+TARGET_GAPPS_ARCH := arm64
+PRODUCT_GMS_CLIENTID_BASE := android-lge
