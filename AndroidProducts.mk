@@ -15,8 +15,8 @@
 #
 
 PRODUCT_MAKEFILES += \
-    $(LOCAL_DIR)/evolution_judypn.mk
+    $(LOCAL_DIR)/aosp_judypn.mk
 
 COMMON_LUNCH_CHOICES := \
-    evolution_judypn-userdebug \
-    evolution_judypn-eng
+    aosp_judypn-userdebug \
+    aosp_judypn-eng
