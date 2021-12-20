@@ -26,8 +26,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 # Inherit from judypn device
 $(call inherit-product, device/lge/judypn/device.mk)
 
-# Inherit some common PE stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common EvolutionX stuff.
+$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 IS_PHONE := true
 TARGET_GAPPS_ARCH := arm64
 TARGET_BOOT_ANIMATION_RES := 1440
@@ -48,8 +48,8 @@ PRODUCT_MANUFACTURER := LGE
 PRODUCT_GMS_CLIENTID_BASE := android-om-lg
 
 # Fingerprint
-BUILD_FINGERPRINT := google/redfin/redfin:12/SPB5.210812.002/7671067:user/release-keys
-BUILD_DESCRIPTION := redfin-user 12 SPB5.210812.002 7671067 release-keys
+BUILD_FINGERPRINT := google/redfin/redfin:11/RQ3A.211001.001/7641976:user/release-keys
+BUILD_DESCRIPTION := redfin-user 11 RQ3A.211001.001 7641976 release-keys
 
 PRODUCT_PROPERTY_OVERRIDES += \
  ro.build.fingerprint=$(BUILD_FINGERPRINT)
