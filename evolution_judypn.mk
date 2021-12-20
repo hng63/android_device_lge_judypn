@@ -40,7 +40,7 @@ TARGET_USES_BLUR := true
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Device identifiers
-PRODUCT_NAME := aosp_judypn
+PRODUCT_NAME := evolution_judypn
 PRODUCT_DEVICE := judypn
 PRODUCT_BRAND := lge
 PRODUCT_MANUFACTURER := LGE

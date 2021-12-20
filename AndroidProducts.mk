@@ -19,4 +19,5 @@ PRODUCT_MAKEFILES += \
 
 COMMON_LUNCH_CHOICES := \
     evolution_judypn-userdebug \
-    evolution_judypn-eng
+    evolution_judypn-eng \
+    evolution_judypn-user
