@@ -3,6 +3,7 @@
 #
 
 # Camera
+ro.vendor.lge.logical.camera=3
 ro.vendor.lge.aux.camera=2
 vendor.lge.faceprint.use.camera=0
 vendor.camera.aux.physical=5

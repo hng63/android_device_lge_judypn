@@ -34,7 +34,6 @@ TARGET_BOOT_ANIMATION_RES := 1440
 TARGET_INCLUDE_PIXEL_CHARGER := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_INCLUDE_STOCK_ACORE := true
-TARGET_USES_BLUR := true
 
 # Overlays (inherit after vendor/cm to ensure we override it)
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
@@ -44,20 +43,16 @@ PRODUCT_NAME := evolution_judypn
 PRODUCT_DEVICE := judypn
 PRODUCT_BRAND := lge
 PRODUCT_MANUFACTURER := LGE
+PRODUCT_RELEASE_NAME := V40 ThinQ
 
 PRODUCT_GMS_CLIENTID_BASE := android-om-lg
 
-# Fingerprint
-BUILD_FINGERPRINT := google/redfin/redfin:11/RQ3A.211001.001/7641976:user/release-keys
-BUILD_DESCRIPTION := redfin-user 11 RQ3A.211001.001 7641976 release-keys
-
-PRODUCT_PROPERTY_OVERRIDES += \
- ro.build.fingerprint=$(BUILD_FINGERPRINT)
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="$(BUILD_DESCRIPTION)"
+TARGET_VENDOR_PRODUCT_NAME := judypn_lao_com
+TARGET_VENDOR_DEVICE_NAME := judypn
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE=judypn \
-    PRODUCT_NAME=judypn_lao_eea \
-    PRIVATE_BUILD_DESC="judypn_lao_eea-user 10 QKQ1.191222.002 2021917599e76 release-keys"
+    PRODUCT_NAME=judypn_lao_com \
+    PRIVATE_BUILD_DESC="judypn_lao_com-user 10 QKQ1.191222.002 2102612392ade release-keys"
+
+BUILD_FINGERPRINT := "lge/judypn_lao_com/judypn:10/QKQ1.191222.002/2102612392ade:user/release-keys"
